@@ -105,7 +105,7 @@ largoSecuencia n = largoSecuenciaAux n 0
 
 maxCollatz :: Int -> Int -> Int
 maxCollatz 10000 m = m
-maxCollatz n m| largoSecuencia n > m = maxCollatz (n+1) n
+maxCollatz n m| largoSecuencia n > largoSecuencia m = maxCollatz (n+1) n
               | otherwise = maxCollatz (n+1) m
 
--- Haciendo maxCollatz 1 0 me da 313
+-- Haciendo maxCollatz 1 1 me da 6171
