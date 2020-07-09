@@ -1,3 +1,4 @@
+module Clase05 where
 -- Problema #9
 fibonacci :: Int -> Int
 fibonacci n| n == 1 || n == 2 = 1
